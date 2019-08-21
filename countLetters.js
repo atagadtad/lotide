@@ -7,12 +7,17 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(word) {
   // numOfLetter object that we'll be pushing the number of letters to
   const numOfLetter = {}
+  let string = [];
+  let split = word.split(' ');
+  let join = split.join('');
+  console.log(join);
+
   // using the for loop to iterate through the word string
-  for (letter of word) {
-    console.log(letter)
-    // if the letter inside the word matches what's being iterated
-    // add an increment of 1 towards the numOfLetter object
+  for (letter of join) {
+
+    // numOfLetter = true then add 1
     if (numOfLetter[letter]) {
+      console.log('numof ->', numOfLetter[letter]);
       numOfLetter[letter] += 1;
       
     } else {
@@ -22,6 +27,6 @@ const countLetters = function(word) {
   return console.log(numOfLetter);
 }
 
-let string = 'lighthouse';
+let string = 'lighthouse in the house';
 
 countLetters(string);
