@@ -8,7 +8,7 @@ const firstNames = [
   'Salima',
   'Agouhanna',
   'Fang',
-  'Kavith',
+  'Kavith', 
   'Jason',
   'Salima',
   'Fang',
