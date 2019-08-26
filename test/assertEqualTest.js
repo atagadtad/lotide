@@ -1,6 +1,7 @@
 const assertEqual = require('../assertEqual');
 const head = require('../head');
 const tail = require('../tail');
+const eqArrays = require('../eqArrays');
 
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
@@ -14,3 +15,8 @@ assertEqual(head([1]), 1);
 // tail
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
+
+// eqArrays
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+// eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false) // => false
