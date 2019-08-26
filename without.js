@@ -1,3 +1,4 @@
+/*
 const eqArrays = function(array1, array2) {
   
   for (i = 0; i < array1.length; i++) {
@@ -19,7 +20,7 @@ const assertArraysEqual = function(array1, array2) {
   console.log(`😄 Assertion Passed: ${array1} === ${array2}`)
   return true;
 };
-
+*/
 const without = function(source, itemsToRemove) {
   let output = [];
 

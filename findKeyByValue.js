@@ -9,9 +9,7 @@ const findKeyByValue = function(object, value) {
   let output = '';
   // iterating over the key values array
   for (genre of key) {
-    
     for (i = 0; i < key.length; i++) {
-
       if (object[genre] === value) {
         output = key[i];
       } else {

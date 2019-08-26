@@ -1,15 +1,15 @@
-const assertEqual = function(actual, expected) {
-  actual === expected ? console.log(`😄 Assertion Passed: ${actual} === ${expected}`) : console.log(`😡 Assertion Failed: "${actual}" !== "${expected}"`);
-};
+// const assertEqual = function(actual, expected) {
+//   actual === expected ? console.log(`😄 Assertion Passed: ${actual} === ${expected}`) : console.log(`😡 Assertion Failed: "${actual}" !== "${expected}"`);
+// };
 
-const eqArrays = function(array1, array2) {
-  for (i = 0; i < array1.length; i++) {
-    if (array1[i] !==  array2[i]) {
-      return false;
-    } 
-  }
-  return true;
-}
+// const eqArrays = function(array1, array2) {
+//   for (i = 0; i < array1.length; i++) {
+//     if (array1[i] !==  array2[i]) {
+//       return false;
+//     } 
+//   }
+//   return true;
+// }
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
@@ -53,37 +53,3 @@ console.log(eqObjects(cd, dc)); // => true
 const cd2 = { c: "1", d: ["2", 3, 4] };
 console.log(eqObjects(cd, cd2)); // => false
 
-
-  // let key1 = Object.keys(object1);
-  // let key2 = Object.keys(object2);
-  // console.log('object1 ->', object1);
-  // console.log('key1 ->', key1);
-
-  // for (singleKey of key1) {
-
-  //   for (i = 0; i < key1.length; i++) {
-  //     if (Array.isArray(object1[singleKey]))
-      
-  //     }
-      
-  //   }
-  // }
-  
-  // if (eqArrays(key1, key2)) {
-  //   output = false
-  // } else {
-  //   output = true;
-  // }
-  // return console.log(output);
-
-
-// const ab = { a: "1", b: "2" };
-// const ba = { b: "2", a: "1" };
-// eqObjects(ab, ba); // => true
-
-// const abc = { a: "1", b: "2", c: "3" };
-// eqObjects(ab, abc); // => false
-
-
-// assertEqual(ab, ba); // => fail
-// assertEqual(ab, abc) // => fail
