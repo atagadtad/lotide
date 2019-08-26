@@ -1,11 +1,6 @@
-let compare = function(c, d) {
-  for (let j = 0; j < c.length; j++) {
-    if (c[j] !== d[j]) {
-      return false;
-    }
-  }
-  return true;
-};
+const assertEqual = require('./assertEqual');
+
+
 
 let tail = function(a) {
   let b = [];
@@ -15,9 +10,6 @@ let tail = function(a) {
   return b;
 };
 
-const assertEqual = function(actual, expected) {
-  compare(actual, expected) === true ? console.log(`😄 Assertion Passed: ${actual} === ${expected}`) : console.log(`😡 Assertion Failed: "${actual}" !== "${expected}"`);
-};
+module.exports = tail;
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
+

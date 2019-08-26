@@ -1,5 +1,6 @@
 const assertEqual = require('../assertEqual');
 const head = require('../head');
+const tail = require('../tail');
 
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
@@ -10,3 +11,6 @@ assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 assertEqual(head([]), undefined);
 assertEqual(head([1]), 1);
 
+// tail
+const result = tail(["Hello", "Lighthouse", "Labs"]);
+assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
